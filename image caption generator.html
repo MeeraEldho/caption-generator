@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Image Caption Generator</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #imagePreview {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    #captionResult {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    input[type="file"] {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AI-Powered Image Caption Generator</h1>
+
+    <!-- Image Upload Section -->
+    <input type="file" id="imageInput" accept="image/*" />
+
+    <!-- Image Preview -->
+    <div id="previewContainer">
+      <img id="imagePreview" src="" alt="Image Preview" />
+    </div>
+
+    <!-- Generate Caption Button -->
+    <button id="generateCaptionBtn">Generate Caption</button>
+
+    <!-- Caption Result -->
+    <div id="captionResult"></div>
+  </div>
+  <script src="image caption generator.js"></script>
+</body>
+</html>
